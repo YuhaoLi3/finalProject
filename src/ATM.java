@@ -26,16 +26,17 @@ public class ATM {
         Scanner scan = new Scanner(System.in);
         System.out.println("welcome to yuhao's ATM\uD83C\uDFE7");
         try {
-            Thread.sleep(1000);  // 2000 milliseconds, or 2 seconds
+            Thread.sleep(1000);  // 1000 milliseconds, or 1 seconds
         } catch (Exception e) {
             System.out.println("error");
         }
         System.out.println("what is your name?");
         String name = scan.nextLine();
         this.name = name;
+        //clears the screen
         ConsoleUtility.clearScreen();
         try {
-            Thread.sleep(1000);  // 2000 milliseconds, or 2 seconds
+            Thread.sleep(1000);  // 1000 milliseconds, or 1 seconds
         } catch (Exception e) {
             System.out.println("error");
         }
@@ -60,12 +61,13 @@ public class ATM {
         System.out.println("Enter your pin\uD83D\uDD10");
         String checkPin = scan.nextLine();
         try {
-            Thread.sleep(1000);  // 2000 milliseconds, or 2 seconds
+            Thread.sleep(1000);  // 1000 milliseconds, or 1 seconds
         } catch (Exception e) {
             System.out.println("error");
         }
         ConsoleUtility.clearScreen();
         while(true) {
+            //if pin in answer correctly, prints the menu our. there is alot of emoji which is why it looks weird
             if (checkPin.equals(Customer.pin)) {
                 System.out.println("\uD83C\uDF1F═════════════════════════════════\uD83C\uDF1F\n" +
                         "         \uD835\uDCDC\uD835\uDCEE\uD835\uDCF7\uD835\uDCFE \uD835\uDCDE\uD835\uDCF9\uD835\uDCFD\uD835\uDCF2\uD835\uDCF8\uD835\uDCF7\uD835\uDCFC           \n" +
@@ -104,7 +106,7 @@ public class ATM {
             String checkPinAgain = scan.nextLine();
             if (checkPinAgain.equals(Customer.pin)) {
                 try {
-                    Thread.sleep(1000);  // 2000 milliseconds, or 2 seconds
+                    Thread.sleep(1000);  // 1000 milliseconds, or 1 seconds
                 } catch (Exception e) {
                     System.out.println("error");
                 }
@@ -180,6 +182,7 @@ public class ATM {
         }
         if(num ==4){
             System.out.println("checking account:"+ConsoleUtility.PURPLE+Account.checking+ConsoleUtility.RESET+"\nsaving account:"+ConsoleUtility.CYAN+Account.saving+ConsoleUtility.RESET+"\nsecurity ID: S"+ConsoleUtility.BLUE+securityID.format(security)+ConsoleUtility.RESET);
+            //increase security ID by one.
             security++;
 
         }

@@ -5,8 +5,7 @@ import java.text.DecimalFormat;
 public class Account {
     public static double checking;
     public static double saving;
-
-
+//    transactionID will be tracked in Account class instead of TransactionHistory.
     public static final DecimalFormat transactionID = new DecimalFormat("0000");
     public static int transaction = 0;
 
@@ -47,6 +46,7 @@ public class Account {
                     if(amount-(20*twenty)-(5*five)==0){
                         System.out.println("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from checking--20 dollar bills:" + twenty + " | 5 dollar bills:" + five+" | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET);
                         TransactionHistory.addHistory("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from checking--20 dollar bills:" + twenty + "| 5 dollar bills: " + five + " | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET+"\n");
+                        //increase the transaction ID by one
                         transaction++;
                         break;
                     }else if(amount-(20*twenty)-(5*five)<=0){
