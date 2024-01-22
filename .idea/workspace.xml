@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb12689b-1671-4dd1-a4bc-d2a442b3eff8" name="Changes" comment="finished + final fix">
+    <list default="true" id="bb12689b-1671-4dd1-a4bc-d2a442b3eff8" name="Changes" comment="finished + final fix + comments + fixed spacing between calculation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +87,32 @@
       <option name="project" value="LOCAL" />
       <updated>1705887518122</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finished + final fix + comments">
+      <option name="closed" value="true" />
+      <created>1705888270517</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705888270517</updated>
+    </task>
+    <task id="LOCAL-00006" summary="finished + final fix + comments + fixed spacing between calculation">
+      <option name="closed" value="true" />
+      <created>1705888565234</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705888565234</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="finished" />
     <MESSAGE value="finished + final fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished + final fix" />
+    <MESSAGE value="finished + final fix + comments" />
+    <MESSAGE value="finished + final fix + comments + fixed spacing between calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished + final fix + comments + fixed spacing between calculation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -12,14 +12,12 @@ public class ATM {
     }
 
 
-
+    Customer customer = new Customer(name, pin);
 
     public void start() {
         welcome();
         Menu();
     }
-
-
 
 
     private void welcome() {
@@ -47,14 +45,6 @@ public class ATM {
         customer.updatePin(pin);
         customer.updateName(name);
     }
-
-
-
-
-    Customer customer = new Customer(name, pin);
-
-
-
 
     private void Menu() {
         Scanner scan = new Scanner(System.in);

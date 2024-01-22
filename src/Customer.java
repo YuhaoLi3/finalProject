@@ -8,15 +8,14 @@ public class Customer {
     public static void updatePin(String num){
         pin = num;
     }
-    public void updateName(String name){
-        this.name  = name;
-    }
-
-    public String getPin() {
-        return pin;
-    }
 
     public static String getName() {
         return name;
+    }
+    public String getPin() {
+        return pin;
+    }
+    public void updateName(String name){
+        this.name  = name;
     }
 }
