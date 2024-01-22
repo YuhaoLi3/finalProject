@@ -132,19 +132,19 @@ public class ATM {
         if ((num == 1)) {
             System.out.println("would you like to Withdraw money from checking or savings");
             String respond = scan.nextLine();
-            if (respond.equals("checking") && Account.checking!=0) {
+            if (respond.equals("checking") && Account.checking != 0) {
                 System.out.println("how much would you like to Withdraw");
                 int amount = scan.nextInt();
                 scan.nextLine();
                 Account.subChecking(amount);
-            } else if (respond.equals("savings")&&Account.saving!=0) {
+            } else if (respond.equals("savings")&&Account.saving != 0) {
                 System.out.println("how much would you like to Withdraw");
                 int amount = scan.nextInt();
                 scan.nextLine();
                 Account.subSaving(amount);
-            }else if(respond.equals("checking") && Account.checking==0){
+            }else if(respond.equals("checking") && Account.checking == 0){
                 System.out.println("no money in checking");
-            }else if(respond.equals("savings") &&Account.saving==0){
+            }else if(respond.equals("savings") &&Account.saving == 0){
                 System.out.println("no money in saving");
             } else{
                 System.out.println("error, please try again!");
@@ -180,18 +180,18 @@ public class ATM {
                 Account.SavingsToChecking(amount);
             }
         }
-        if(num ==4){
+        if(num == 4){
             System.out.println("checking account:"+ConsoleUtility.PURPLE+Account.checking+ConsoleUtility.RESET+"\nsaving account:"+ConsoleUtility.CYAN+Account.saving+ConsoleUtility.RESET+"\nsecurity ID: S"+ConsoleUtility.BLUE+securityID.format(security)+ConsoleUtility.RESET);
             //increase security ID by one.
             security++;
 
         }
-        if(num==5){
+        if(num == 5){
             System.out.println("security ID: S"+ConsoleUtility.BLUE+securityID.format(security)+ConsoleUtility.RESET);
             security++;
             System.out.println(TransactionHistory.history);
         }
-        if(num ==6){
+        if(num == 6){
             System.out.println("what would you like your new pin to be?");
             String pin = scan.nextLine();
             Customer.updatePin(pin);

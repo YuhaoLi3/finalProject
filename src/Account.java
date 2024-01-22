@@ -43,19 +43,19 @@ public class Account {
                     int twenty = scan.nextInt();
                     System.out.println("how many 5 dollar bills would you like?");
                     int five = scan.nextInt();
-                    if(amount-(20*twenty)-(5*five)==0){
+                    if(amount - (20 * twenty) - (5 * five) == 0){
                         System.out.println("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from checking--20 dollar bills:" + twenty + " | 5 dollar bills:" + five+" | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET);
                         TransactionHistory.addHistory("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from checking--20 dollar bills:" + twenty + "| 5 dollar bills: " + five + " | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET+"\n");
                         //increase the transaction ID by one
                         transaction++;
                         break;
-                    }else if(amount-(20*twenty)-(5*five)<=0){
+                    }else if(amount - (20 * twenty) - (5 * five) <= 0){
                         System.out.println("not possible!");
-                    }else if (amount-(20*twenty)-(5*five)>=0){
-                        double x = (amount-(20*twenty)-(5*five))/5;
-                        System.out.println("your remanding $"+ ConsoleUtility.GREEN+(int)((amount-(20*twenty)-(5*five)))+ConsoleUtility.RESET+" has been been into "+(int)x +" 5 dollar bills");
-                        System.out.println("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from checking--20 dollar bills:" + twenty + " | 5 dollar bills: " + (int)(five+x)+" | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET);
-                        TransactionHistory.addHistory("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from checking--20 dollar bills:" + twenty + " | 5 dollar bills: " + (int)(five+x) + " Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET+"\n");
+                    }else if (amount - (20 * twenty) - (5 * five) >= 0){
+                        double x = (amount - (20 * twenty) - (5 * five)) /5;
+                        System.out.println("your remanding $"+ ConsoleUtility.GREEN+(int)((amount - (20 * twenty) - (5 * five)))+ConsoleUtility.RESET+" has been been into "+(int)x +" 5 dollar bills");
+                        System.out.println("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from checking--20 dollar bills:" + twenty + " | 5 dollar bills: " + (int)(five + x)+" | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET);
+                        TransactionHistory.addHistory("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from checking--20 dollar bills:" + twenty + " | 5 dollar bills: " + (int)(five + x) + " Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET+"\n");
                         transaction++;
                         break;
                     }
@@ -78,18 +78,18 @@ public class Account {
                     int twenty = scan.nextInt();
                     System.out.println("how many 5 dollar bills would you like?");
                     int five = scan.nextInt();
-                    if(amount-(20*twenty)-(5*five)==0){
+                    if(amount - (20 * twenty) - (5 * five) == 0){
                         System.out.println("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from saving--20 dollar bills: " + twenty + " | 5 dollar bills: " + five+" | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET);
                         TransactionHistory.addHistory("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET + " from saving- 20 dollar bills: " + twenty + "| 5 dollar bills:" + five + " | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET+" \n");
                         transaction++;
                         break;
-                    }else if(amount-(20*twenty)-(5*five)<=0){
+                    }else if(amount-(20 * twenty)-(5 * five) <= 0){
                         System.out.println("insufficient funds!");
-                    }else if (amount-(20*twenty)-(5*five)>=0){
-                        double x = (amount-(20*twenty)-(5*five))/5;
-                        System.out.println("your remanding $"+ ConsoleUtility.GREEN+(int)((amount-(20*twenty)-(5*five)))+ConsoleUtility.RESET+" has been been into "+(int)x +" 5 dollar bills");
-                        System.out.println("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET+" from saving--20 dollar bills: " + twenty + " | 5 dollar bills: " + (int)(five+x)+" | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET);
-                        TransactionHistory.addHistory("Withdrawn $" + amount + " from saving--20 dollar bills:" + twenty + " | 5 dollar bills " + (int)(five+x)+ " | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET+" \n");
+                    }else if (amount-(20 * twenty) - (5 * five) >= 0){
+                        double x = (amount - (20 * twenty) - (5 * five)) / 5;
+                        System.out.println("your remanding $"+ ConsoleUtility.GREEN+(int)((amount - (20 * twenty) - (5 * five)))+ConsoleUtility.RESET+" has been been into "+(int)x +" 5 dollar bills");
+                        System.out.println("Withdrawn $" + ConsoleUtility.RED+amount + ConsoleUtility.RESET+" from saving--20 dollar bills: " + twenty + " | 5 dollar bills: " + (int)(five + x)+" | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET);
+                        TransactionHistory.addHistory("Withdrawn $" + amount + " from saving--20 dollar bills:" + twenty + " | 5 dollar bills " + (int)(five + x)+ " | Transaction ID:A"+ConsoleUtility.YELLOW+transactionID.format(transaction)+ConsoleUtility.RESET+" \n");
                         transaction++;
                         break;
                     }
