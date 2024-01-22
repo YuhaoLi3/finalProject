@@ -66,7 +66,7 @@ public class ATM {
         }
         ConsoleUtility.clearScreen();
         while(true) {
-            if (checkPin.equals(pin)) {
+            if (checkPin.equals(Customer.pin)) {
                 System.out.println("\uD83C\uDF1F═════════════════════════════════\uD83C\uDF1F\n" +
                         "         \uD835\uDCDC\uD835\uDCEE\uD835\uDCF7\uD835\uDCFE \uD835\uDCDE\uD835\uDCF9\uD835\uDCFD\uD835\uDCF2\uD835\uDCF8\uD835\uDCF7\uD835\uDCFC           \n" +
                         "\uD83C\uDF1F═════════════════════════════════\uD83C\uDF1F\n" +
@@ -102,7 +102,7 @@ public class ATM {
             }
             System.out.println("Enter your pin\uD83D\uDD10");
             String checkPinAgain = scan.nextLine();
-            if (checkPinAgain.equals(pin)) {
+            if (checkPinAgain.equals(Customer.pin)) {
                 try {
                     Thread.sleep(1000);  // 2000 milliseconds, or 2 seconds
                 } catch (Exception e) {
@@ -191,13 +191,13 @@ public class ATM {
         if(num ==6){
             System.out.println("what would you like your new pin to be?");
             String pin = scan.nextLine();
-            this.pin = pin;
+            Customer.updatePin(pin);
             System.out.println("changed PIN");
             System.out.println("security ID: S"+ConsoleUtility.BLUE+securityID.format(security)+ConsoleUtility.RESET);
             security++;
         }
         if (num == 7){
-            System.out.println("thank you for being a customer! see you again soon 😎😎😎");
+            System.out.println("thank you for being a customer " +Customer.getName()+"! see you again soon 😎😎😎");
             on =false;
         }
     }

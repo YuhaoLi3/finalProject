@@ -1,11 +1,11 @@
 public class Customer {
-    private String name;
-    private String pin;
+    private static String name;
+    public static String pin;
     public Customer(String name, String pin){
         this.name = name;
         this.pin = pin;
     }
-    public void updatePin(String num){
+    public static void updatePin(String num){
         pin = num;
     }
     public void updateName(String name){
@@ -16,7 +16,7 @@ public class Customer {
         return pin;
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 }
